@@ -1,0 +1,100 @@
+.container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 40% auto 20%;
+  grid-template-rows: 20% 60% 20%;
+  grid-template-areas: 
+  "title title close"
+  "main  main  empty"
+  "main  main  save";  
+  background-color: rgb(254, 254, 255);
+  box-shadow: 0 0 5px #0a0227bb;
+  border-radius: 4px;
+  padding: 0 0 15px 0;
+}
+
+textarea, input {
+  border: none;
+  box-shadow: 0 0 6px rgba(9, 37, 163, 0.26);
+  outline: 1px solid rgba(15, 3, 45, 0.307);
+  padding: 4px;
+  border-radius: 3px;
+}
+
+textarea:focus, input:focus {
+  outline: 1px solid rgb(37, 3, 121);
+}
+
+.saveBtn, .closeBtn {
+  transition: 250ms;
+  margin: 0 0 0 4px;
+  padding: 4px 10px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(65, 51, 190);
+  border-radius: 15px;
+  box-shadow: 0 0 3px rgb(59, 76, 148);
+  color: white;
+  cursor: pointer;
+}
+
+.saveBtn:hover, .closeBtn:hover {
+  background: rgba(34, 27, 88, 0.938);
+  box-shadow: 0 0 2px black;
+}
+
+.container > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title, .body {
+  flex-direction: column;
+  align-items:flex-start;
+  justify-content: center;
+  margin-left: 10%;
+}
+
+.title {
+  grid-area: title;
+}
+
+.title > input {
+  width: 80%;
+  height: 30%;
+}
+
+.popupClose {
+  grid-area: close;
+}
+
+.body {
+  grid-area: main;
+}
+
+.body > h4, .title > h4 {
+  padding: 0 0 10px 10px;
+}
+
+.body > textarea {
+  resize: none;
+  height: 90%;
+  width: 90%;
+}
+
+.popupSave {
+  grid-area: save;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+@media only screen and (max-width:700px) {
+  .iconWrapper > * {
+    margin: 0 4px 0 4px;
+  }
+}

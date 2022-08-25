@@ -1,0 +1,14 @@
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: none;
+  border-radius: 4px;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.icon:hover {
+  box-shadow: inset 1px 1px 2px rgb(7, 2, 26);
+}

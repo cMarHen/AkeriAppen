@@ -1,0 +1,197 @@
+.container {
+  background: radial-gradient(rgb(49, 40, 123), rgba(50, 40, 123, 0.878));
+  height: 97%;
+  width: 90%;
+  grid-area: nav;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 25px;
+  color: rgb(227, 242, 255);
+  position: relative;
+}
+
+.container a {
+  color: inherit;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.navList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 70%;
+  margin-bottom: 20px;
+}
+
+.navUl {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  margin-top: 10px;
+  padding-left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.navLi {
+  list-style: none;
+  cursor: pointer;
+  position: relative;
+  height: 12%;
+  width: 90%;
+  border-radius: 13px 0 0 13px;
+  margin: 5px 0 5px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 150ms;
+  font-size: 0.7rem;
+}
+
+.navLi a {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
+.navLi p,
+.navAdminLink p,
+.navLogoutLink p {
+  margin: 0;
+}
+
+.navLi > a > img {
+  height: 70%;
+  width: 70%;
+}
+
+.navLi:hover > a,
+.navLi > a[class="active"] {
+  transform: scale(1.1);
+  background: linear-gradient(90deg, rgba(49,40,123,1) 0%, rgba(238, 236, 255) 76%);
+}
+
+
+.navLi > a[class="active"]::after {
+  content: "";
+  position: absolute;
+  height: 130%;
+  width: 30%;
+  background-color: rgba(238, 236, 255);
+  left: 82%;
+  border-radius: 30px 0 0 30px;
+}
+
+.logo {
+  height: 60px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+
+.logo > img {
+  position: absolute;
+  width: 110px;
+  height: 90px;
+}
+
+.navLogoutArea {
+  height: 20%;
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 0.7rem;
+}
+
+.navBtn {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  z-index: 1;
+  background: rgb(243, 243, 252);
+  border-radius: 5px;
+  box-shadow: 0 0 5px 1px rgb(49, 40, 123);
+}
+
+.navBtn:active {
+  background: rgb(49, 40, 123);
+  box-shadow: 0 0 5px rgb(49, 40, 123);
+}
+
+.navBtn img {
+  height: 100%;
+}
+
+@media only screen and (max-width:700px) {
+  .logo {
+    display: none;
+  }
+
+  .navBtn {
+    display: block;
+    right: 10px;
+  }
+
+  .container {
+    width: 100%;
+    background: none;
+    position: relative;
+  }
+
+  .navList {
+    position: absolute;
+    top: 50px;
+    right: 5px;
+    height: 85vh;
+    width: 120px;
+    background: radial-gradient(rgb(49, 40, 123), rgba(50, 40, 123, 0.878));
+    border-radius: 5px;
+    padding: 20px 0;
+    z-index: 10;
+  }
+
+  .navUl {
+    height: 100%;
+    width: 80px;
+    padding: 10px;
+  }
+
+  .navLi {
+    height: 100%;
+    margin: 4px 0;
+  }
+
+  .navLi:hover > a, .navLi > a[class="active"] {
+    transform: none;
+    border-radius: 0 0 10% 10%;
+    background: rgba(201, 216, 255, 0.863);
+  }
+
+  .navLi > a[class="active"]::after {
+    display: none;
+  }
+}

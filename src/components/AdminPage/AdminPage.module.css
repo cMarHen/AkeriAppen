@@ -1,0 +1,65 @@
+.container {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 10vh auto;
+  grid-template-areas:
+      "nav"
+      "main";
+      
+  overflow-y: scroll;
+}
+
+.adminNav {
+  grid-area: nav;
+  border-bottom: 1px solid blanchedalmond;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.adminNavLi > a {
+  text-decoration: none;
+  color: white;
+}
+
+.adminNavLi {
+  margin: 0 10px;
+  list-style: none;
+  background: rgb(68, 55, 167);
+  border-radius: 15px;
+  padding: 10px 10px;
+  box-shadow: inset 0 0 5px white;
+}
+
+.adminNavLi:hover {
+  box-shadow: inset 0 0 16px rgb(8, 2, 54);
+  cursor: pointer;
+}
+
+.adminNavLi > a[class="active"] {
+  color: rgb(130, 128, 255);
+}
+
+.adminNav > ul {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  background: rgb(68, 55, 167);
+  padding: 5px 30px;
+  border-radius: 3px;
+  box-shadow: 0 0 3px rgb(68, 55, 167);
+}
+
+.adminMain {
+  grid-area: main;
+}
+
+@media only screen and (max-width:700px) {
+  .container {
+    grid-template-columns: 100%;
+    overflow-y: scroll;
+  }
+}

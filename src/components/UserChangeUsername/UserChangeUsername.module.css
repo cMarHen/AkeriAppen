@@ -1,0 +1,38 @@
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 3px;
+  padding: 15px;
+  box-shadow: 2px 2px 6px rgb(49, 40, 123);
+}
+
+.inputLabel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.inputSubmit {
+  border-radius: 3px;
+  padding: 4px;
+  margin-top: 3px;
+}
+
+.submitBtn {
+  margin-top: 15px;
+  width: 90px;
+  height: 20px;
+  border: none;
+  border-radius: 7px;
+  color: white;
+  background: rgb(49, 40, 123);
+}
+
+.submitBtn:hover {
+  box-shadow: 0 0 6px 3px rgb(49, 40, 123);
+}

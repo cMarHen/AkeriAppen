@@ -1,0 +1,38 @@
+.container {
+  width: 100%;
+  height: 100%;
+  background: rgb(250, 249, 255);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 0 10px rgb(23, 10, 80);
+}
+
+.btnArea {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.submitBtn {
+  margin: 0 4px 0 4px;
+  padding: 0;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(65, 51, 190);
+  border-radius: 45px 45px 45px 45px;
+  box-shadow: 0 0 3px rgb(59, 76, 148);
+  height: 35px;
+  width: 55px;
+  color: white;
+}
+
+.submitBtn:hover {
+  cursor: pointer;
+  background: rgb(54, 38, 192);
+  box-shadow: 0 0 5px rgb(1, 74, 184);
+}

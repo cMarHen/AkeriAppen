@@ -1,0 +1,145 @@
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  color: rgb(9, 2, 102);
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.calendar {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 0 4px rgb(174, 189, 221);
+  background: rgba(226, 229, 255, 0.527);
+  border-radius: 5%;
+  min-width: 70%;
+  min-height: 50%;
+  height: min-content;
+  width: min-content;
+}
+
+.headerArea {
+  margin: 5px;
+}
+
+.user-popup-container {
+  position: absolute;
+  display: flex;
+  top: 6%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 70%;
+  width: 60%;
+  box-shadow: 3px 3px 6px rgb(12, 45, 87);
+  border-radius: 5%;
+  padding: 0 20px;
+  background: white;
+}
+
+.user-popup-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  height: 50%;
+  align-self: center;
+  padding: 5px;
+}
+
+.user-popup-send {
+  margin: 0 0 0 4px;
+  padding: 0;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(65, 51, 190);
+  border-radius: 45px 45px 45px 45px;
+  box-shadow: 0 0 3px rgb(59, 76, 148);
+  height: 35px;
+  width: 55px;
+  color: white;
+}
+
+.user-popup-send:hover {
+  cursor: pointer;
+  background: rgb(54, 38, 192);
+  box-shadow: 0 0 5px rgb(1, 74, 184);
+}
+
+.user-popup-submitArea {
+  display: flex;
+  align-self: flex-end;
+}
+
+.react-calendar {
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+  box-shadow: 3px 3px 6px rgb(12, 45, 87);
+  border: none;
+}
+
+.react-calendar .highlight {
+  background: rgb(38, 202, 16);
+}
+
+.headerArea p {
+  display: flex;
+}
+
+.greenDay {
+  background: rgb(38, 202, 16);
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-right: 4px;
+  border-radius: 2px;
+}
+.yellowDay {
+  background: #FFFFA9;
+  width: 20px;
+  height: 20px;
+  margin-right: 4px;
+  border-radius: 2px;
+}
+
+@media only screen and (max-width:700px) { 
+  .container {
+    justify-content: space-between;
+    width: 100%;
+    height: min-content;
+  }
+
+  .calendar {
+    height: min-content;
+    padding: 5px;
+    margin-top: 15px;
+  }
+
+
+  .usernameChange {
+    margin-top: 30px;
+  }
+
+  .user-popup-container {
+    top: 10%;
+    height: 80%;
+    width: 80%;
+    padding: 4px;
+  }
+
+  .user-popup-input {
+    width: 100%;
+  }
+}

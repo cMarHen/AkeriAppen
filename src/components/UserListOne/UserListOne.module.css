@@ -1,0 +1,142 @@
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 5px;
+  border-radius: 3px;
+  background: rgb(246, 249, 255);
+  box-shadow: inset 0 0 3px rgb(89, 89, 175);
+  color: rgb(45, 16, 119);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 4px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid rgb(89, 89, 175);
+  position: relative;
+}
+
+.userListBody {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.listUserTrucks, .listCompanyTrucks {
+  width: 40%;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 0 3px 1px rgba(50, 40, 123);
+  border-radius: 2px;
+}
+
+.listUserTrucks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.listCompanyTrucks {
+  position: relative;
+}
+
+.collapseBtn {
+  color: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.trucksUl {
+  position: absolute;
+  top: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  list-style: none;
+  z-index: 1;
+  width: 80%;
+  border-radius: 2px;
+  background: rgba(238, 236, 255);
+  box-shadow: 0 0 3px 1px rgba(50, 40, 123);
+  padding-top: 10px;
+}
+
+.trucksCheckbox {
+  display: flex;
+  justify-content: space-between;
+  margin: 3px 0;
+}
+
+.trucksCheckbox > input {
+  border: none;
+  outline: none;
+  margin-left: 5px;
+}
+
+.submitBtn {
+  margin: 10px;
+  transition: 250ms;
+  padding: 4px 10px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(65, 51, 190);
+  border-radius: 15px;
+  box-shadow: 0 0 3px rgb(59, 76, 148);
+  color: white;
+  cursor: pointer;
+}
+
+.submitBtn:hover {
+  background: rgba(34, 27, 88, 0.938);
+  box-shadow: 0 0 2px black;
+}
+
+.usernameHead {
+  font-weight: 500;
+}
+
+.usernameHead span {
+  font-weight: 700;
+  margin-left: 5px;
+}
+
+.workedTime {
+  margin: 5px 0;
+}
+
+.workedTime span {
+  margin-left: 5px;
+  font-weight: 700;
+}
+
+
+.binIcon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background: none;
+}
+
+.confirmPopup {
+  position: absolute;
+  top: 20%;
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 350px;
+  height: 200px;
+}
